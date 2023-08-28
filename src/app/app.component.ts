@@ -26,4 +26,12 @@ export class AppComponent {
       content: 'I did some biking today',
     },
   ];
+  name: string;
+  date: string;
+  oninputevent(value: string) {
+    this.name = value;
+  }
+  ondate(value: string) {
+    this.date = value;
+  }
 }

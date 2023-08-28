@@ -1,8 +1,30 @@
-<app-card
-  *ngFor="let post of posts"
-  [title]="post.title"
-  [imageUrl]="post.imageUrl"
-  [username]="post.username"
-  [content]="post.content"
->
-</app-card>
+<div class="con1">
+  <div class="sec1">
+    <label>Reciever Name</label>
+    <input (input)="oninputevent($event.target.value)" />
+  </div>
+  <div>
+    <h1>Reciever name</h1>
+    <p>{{ name | titlecase }}</p>
+  </div>
+</div>
+<div class="con1">
+  <div class="sec1">
+    <label>date</label>
+    <input type="date" (input)="ondate($event.target.value)" />
+  </div>
+  <div>
+    <h1>{{ date | date : "d LLLL YYYY  " }}</h1>
+    <p></p>
+  </div>
+</div>
+<div class="con1">
+  <div class="sec1">
+    <label>Reciever Name</label>
+    <input />
+  </div>
+  <div>
+    <h1>Reciever name</h1>
+    <p>dsad</p>
+  </div>
+</div>

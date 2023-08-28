@@ -1,5 +1,28 @@
-:host {
+/* :host {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+} */
+.sec1 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.sec2 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.sec3 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.con1 {
+  display: flex;
+  justify-content: row;
+  gap: 20px;
 }
