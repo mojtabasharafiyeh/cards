@@ -6,32 +6,180 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  posts = [
+  currentPage = 1;
+  images = [
     {
-      title: 'neat tree',
-      imageUrl: 'assets/tree.jpeg',
-      username: 'nature',
-      content: 'I saw this neat tree today ',
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
     },
     {
-      title: 'snowy mountain',
-      imageUrl: 'assets/mountain.jpeg',
-      username: 'mountainlover',
-      content: 'here is a picture of snowy mountain',
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
     },
     {
-      title: 'mountain biking',
-      imageUrl: 'assets/biking.jpeg',
-      username: 'biking1222 ',
-      content: 'I did some biking today',
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
+    },
+    {
+      title: 'a',
+      url: 'https://images.freeimages.com/images/previews/34e/williamstown-1057646.jpg',
+    },
+    {
+      title: 'b',
+      url: 'https://images.freeimages.com/images/previews/ddf/tour-d-eiffel-1447025.jpg',
+    },
+    {
+      title: 'c',
+      url: 'https://images.freeimages.com/variants/a4nP2t7D23VdcT1Eu14pX6hN/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d',
+    },
+    {
+      title: 'd',
+      url: 'https://images.freeimages.com/images/previews/b00/indian-bride-1181855.jpg',
     },
   ];
-  name: string;
-  date: string;
-  oninputevent(value: string) {
-    this.name = value;
+  clickHandler(i: number) {
+    this.currentPage = i;
   }
-  ondate(value: string) {
-    this.date = value;
+  nextHandler() {
+    if (this.currentPage < this.images.length - 1) {
+      this.currentPage += 1;
+    }
+  }
+  preHandler() {
+    if (this.currentPage !== 0) {
+      this.currentPage -= 1;
+    }
   }
 }
